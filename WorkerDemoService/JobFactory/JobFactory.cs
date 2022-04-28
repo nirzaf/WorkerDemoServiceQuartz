@@ -1,8 +1,6 @@
 ﻿using Quartz;
 using Quartz.Spi;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace WorkerDemoService.JobFactory
 {

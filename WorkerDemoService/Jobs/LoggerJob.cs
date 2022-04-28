@@ -1,7 +1,5 @@
 ﻿using Quartz;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
@@ -16,7 +14,7 @@ namespace WorkerDemoService.Jobs
         }
         public Task Execute(IJobExecutionContext context)
         {
-            _logger.LogInformation($"Log Job: at {DateTime.Now} and Jobtype: {context.JobDetail.JobType}");
+            _logger.LogInformation($"This Job Logged: at {DateTime.Now} and Job Type: {context.JobDetail.JobType}");
             return Task.CompletedTask;
         }
     }
